@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Declaração do tipo de documento. Informa ao navegador que o documento é HTML5 -->
+<html lang="pt-br">
+<!-- Tag raiz do documento HTML. O atributo 'lang' define o idioma como português do Brasil -->
+
+  <head>
+    <!-- Cabeçalho do documento, com metadados e links para recursos externos -->
+
+    <meta charset="UTF-8" />
+    <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação e caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a visualização em dispositivos móveis, garantindo responsividade -->
+
+    <title>Pedro Jonata - Portfólio</title>
+    <!-- Título da página exibido na aba do navegador -->
+
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Importa o arquivo de estilos CSS externo que define o design da página -->
+
+  </head>
+
+  <body>
+    <!-- Corpo da página: tudo que é visível ao usuário está aqui -->
+
+    <header>
+      <!-- Cabeçalho da página: geralmente contém logo, menu de navegação, etc -->
+
+      <nav>
+        <!-- Tag de navegação: contém os links para as seções da página -->
+        <ul>
+          <!-- Lista não ordenada de links do menu -->
+          <li><a href="#sobre">Sobre</a></li>
+          <!-- Link âncora para a seção "sobre" -->
+          <li><a href="#hobbies">Hobbies</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <!-- As seções "Habilidades" e "Conhecimentos" estão juntas -->
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Conteúdo principal da página -->
+
+      <!-- Seção de Apresentação -->
+      <section id="apresentacao">
+        <!-- Seção com a apresentação do Pedro -->
+
+        <img
+          src="c:\Users\pedro\OneDrive\Pictures\Camera Roll\pedro.jpg"
+          alt="Foto de Perfil de Pedro Jonata"
+          class="foto-perfil"
+        />
+        <!-- Imagem de perfil (OBS: esse caminho local não funciona na web; deve usar uma URL ou caminho relativo ao projeto) -->
+
+        <h1>Pedro Jonata</h1>
+        <!-- Título principal da página, normalmente com o nome da pessoa -->
+
+        <p>Aluno da Faculdade CDL</p>
+        <!-- Parágrafo de apresentação resumida -->
+      </section>
+
+      <!-- Seção Sobre -->
+      <section id="sobre" class="conteudo-secao">
+        <!-- Seção com informações pessoais e introdutórias -->
+
+        <h2>Sobre Mim</h2>
+        <!-- Título de segundo nível da seção -->
+
+        <p>Olá! Sou Pedro Jonata, apaixonado pelo mundo da tecnologia</p>
+        <!-- Parágrafo com um breve texto sobre você -->
+      </section>
+
+      <!-- Seção Hobbies -->
+      <section id="hobbies" class="conteudo-secao">
+        <!-- Seção com os hobbies/interesses pessoais -->
+
+        <h2>Hobbies</h2>
+        <!-- Título da seção -->
+
+        <p>
+          Gosto de explorar novas tecnologias, assistir filmes e ler sobre
+          desenvolvimento pessoal
+        </p>
+        <!-- Parágrafo descrevendo seus hobbies -->
+      </section>
+
+      <!-- Seção Habilidades (também chamada de "Conhecimentos") -->
+      <section id="habilidades" class="conteudo-secao">
+        <h2>Conhecimentos</h2>
+        <!-- Título da seção -->
+
+        <!-- Habilidades Técnicas (Hard Skills) -->
+        <div class="skills-bar">
+          <!-- Container para as barras de habilidades -->
+          
+          <div class="skill-item">
+            <!-- Item individual de habilidade -->
+            <span>Linguagens de Programação (HTML/CSS)</span>
+            <!-- Nome da habilidade -->
+
+            <div class="bar">
+              <!-- Barra que representa o nível da habilidade -->
+              <div class="progress" style="width: 80%"><span>10%</span></div>
+              <!-- Parte preenchida da barra (OBS: texto diz 10%, mas o width está em 80%) -->
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <span>Lógica de Programação</span>
+            <div class="bar">
+              <div class="progress" style="width: 70%"><span>70%</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habilidades Interpessoais (Soft Skills) -->
+        <h3>Habilidades Interpessoais</h3>
+        <!-- Subtítulo para habilidades pessoais -->
+
+        <ul>
+          <!-- Lista de habilidades pessoais -->
+          <li>Comunicação eficaz</li>
+          <li>Trabalho em equipe</li>
+          <li>Resolução de conflitos</li>
+          <li>Liderança</li>
+          <li>Empatia</li>
+        </ul>
+      </section>
+
+      <!-- Seção Contato -->
+      <section id="contato" class="conteudo-secao">
+        <h2>Contato</h2>
+        <!-- Título da seção de contato -->
+
+        <p>Sinta-se à vontade para entrar em contato:</p>
+        <!-- Mensagem introdutória -->
+
+        <div class="links-contato">
+          <!-- Container com os botões de contato -->
+
+          <a href="mailto:jonatap463@gmail.com" class="botao">Email</a>
+          <!-- Link para enviar e-mail -->
+
+          <a href="https://web.whatsapp.com/" class="botao" target="_blank">WhatsApp</a>
+          <!-- Link para WhatsApp Web -->
+
+          <a href="https://github.com/" class="botao" target="_blank">GitHub</a>
+          <!-- Link para o GitHub -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- Rodapé da página -->
+      <p>&copy; 2025 Pedro Jonata. Todos os direitos reservados.</p>
+      <!-- Mensagem de direitos autorais -->
+    </footer>
+
+  </body>
+</html>
